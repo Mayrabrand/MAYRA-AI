@@ -18,7 +18,10 @@
   <a href="https://keithsite.top/keithpair">
     <img src="https://img.shields.io/badge/GET%20YOUR%20SESSION%20ID-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" width="180"/>
   </a>
-</p>STEP 3: DEPLOY TO HEROKU
+</a>
+</p><p align="center">
+    <strong>1. FORK REPOSITORY</strong>
+  <br>
 
 <p align="center">
   <a href="https://dashboard.heroku.com/new?template=https://github.com/Mayrabrand/MAYRA-AI">
