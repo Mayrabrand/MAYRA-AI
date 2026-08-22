@@ -13,7 +13,6 @@
 </p><p align="center">
     <strong>2. GET YOUR SESSION ID</strong>
   <br>
-
 <p align="center">
   <a href="https://keithsite.top/keithpair">
     <img src="https://img.shields.io/badge/GET%20YOUR%20SESSION%20ID-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" width="170"/>
