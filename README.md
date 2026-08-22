@@ -20,7 +20,7 @@
   </a>
 </a>
 </p><p align="center">
-    <strong>1. DEPLOY TO HEROKU</strong>
+    <strong>3. DEPLOY TO HEROKU</strong>
   <br>
 
 <p align="center">
