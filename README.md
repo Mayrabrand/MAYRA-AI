@@ -1,2 +1,6 @@
-# MAYRA-AI
-MAYRA-AI – Simple, fast WhatsApp bot for automation. Fork &amp; Star to support development!
+ fork our repository [fork](https://github.com/kkeizza/Keith/fork)
+
+Pair site [pair](https://keithsite.top/keithpair)
+
+heroku deployment [heroku](https://keithsite.top/heroku)
+  
