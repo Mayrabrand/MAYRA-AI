@@ -9,7 +9,10 @@
   <a href="https://github.com/Mayrabrand/MAYRA-AI/fork">
     <img src="https://img.shields.io/badge/FORK%20-181717?style=for-the-badge&logo=github&logoColor=white" width="80"/>
   </a>
-</p>STEP 2: GET YOUR SESSION ID
+</a>
+</p><p align="center">
+    <strong>1. FORK REPOSITORY</strong>
+  <br>
 
 <p align="center">
   <a href="https://keithsite.top/keithpair">
