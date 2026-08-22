@@ -1,6 +1,9 @@
 🚀 MAYRA-AI DEPLOYMENT
 
-1: ###FORK THE REPOSITORY
+</a>
+</p><p align="center">
+    <strong>1. FORK REPOSITORY</strong>
+  <br>
 
 <p align="center">
   <a href="https://github.com/Mayrabrand/MAYRA-AI/fork">
