@@ -1,4 +1,7 @@
-🚀 MAYRA-AI DEPLOYMENT
+</a>
+</p><p align="center">
+    <strong>1. FORK REPOSITORY</strong>
+  <br>
 
 </a>
 </p><p align="center">
