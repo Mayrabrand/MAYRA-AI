@@ -11,7 +11,7 @@
   </a>
 </a>
 </p><p align="center">
-    <strong>1. FORK REPOSITORY</strong>
+    <strong>1. GET YOUR SESSION ID</strong>
   <br>
 
 <p align="center">
