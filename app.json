@@ -1,6 +1,6 @@
 
 {
-  "name": "KEITH-MD",
+  "name": "MAYRA-AI",
   "description": "This is a simple whatsapp bot built with nodejs to make your WhatsApp enjoyable",
   "keywords": [
     "bot",
@@ -15,8 +15,8 @@
     "baileys-md",
     "md-bot"
   ],
-  "website": "https://keithsite.top",
-  "repository": "https://github.com/kkeizzah25/KEITH-MD.git",
+  "website": "https://lukasite.top",
+  "repository": "https://github.com/mayrabrand/MAYRA-AI.git",
   "logo": "https://i.ibb.co/PsZnb9NH/0d81ac6b1fb1.jpg",
   "success_url": "/",
   "env": {
@@ -48,7 +48,7 @@
     },
     "STATUS_LIKE_EMOJIS": {
       "description": "Emojis to use for liking status (comma-separated)",
-      "value": "💚,🩵,💚",
+      "value": "💚,🩵,",
       "required": false
     },
     
@@ -69,12 +69,12 @@
     
     "BOT_PIC": {
       "description": "Bot profile picture URL",
-      "value": "https://i.ibb.co/PsZnb9NH/0d81ac6b1fb1.jpg",
+      "value": "https://files.catbox.moe/7b5bxf.png",
       "required": false
     },
     "BOTNAME": {
       "description": "Bot display name",
-      "value": "KEITH-MD",
+      "value": "MAYRA-AI",
       "required": false
     },
     "MODE": {
