@@ -2,8 +2,6 @@
 
 STEP 1: FORK THE REPOSITORY
 
-Fork the repository to your GitHub account before proceeding.
-
 <p align="center">
   <a href="https://github.com/Mayrabrand/MAYRA-AI/fork">
     <img src="https://img.shields.io/badge/FORK%20REPOSITORY-181717?style=for-the-badge&logo=github&logoColor=white" width="230"/>
