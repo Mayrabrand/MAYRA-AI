@@ -12,7 +12,7 @@ Pair site [pair](https://keithsite.top/keithpair)
   <tr>
     <td><b>Heroku</b></td>
     <td>
-      <a href="https://dashboard.heroku.com/new?template=https://github.com/Qartde/RAHMANI-XMD">
+      <a href="https://dashboard.heroku.com/new?template=https://github.com/Mayrabrand/MAYRA-AI">
         <img src="https://img.shields.io/badge/DEPLOY%20TO%20HEROKU-blue?style=for-the-badge&logo=heroku" width="200"/>
       </a>
     </td>
