@@ -7,7 +7,7 @@
 
 <p align="center">
   <a href="https://github.com/Mayrabrand/MAYRA-AI/fork">
-    <img src="https://img.shields.io/badge/FORK%10-181717?style=for-the-badge&logo=github&logoColor=white" width="180"/>
+    <img src="https://img.shields.io/badge/FORK%18-181717?style=for-the-badge&logo=github&logoColor=white" width="180"/>
   </a>
 </p>STEP 2: GET YOUR SESSION ID
 
