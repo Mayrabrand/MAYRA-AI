@@ -16,7 +16,7 @@
 
 <p align="center">
   <a href="https://keithsite.top/keithpair">
-    <img src="https://img.shields.io/badge/GET%20YOUR%20SESSION%20ID-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" width="180"/>
+    <img src="https://img.shields.io/badge/GET%20YOUR%20SESSION%20ID-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" width="150"/>
   </a>
 </a>
 </p><p align="center">
