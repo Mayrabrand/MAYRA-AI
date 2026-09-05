@@ -345,18 +345,20 @@ async function sendStartupMessage(socket, s) {
         const expLine        = await expiryLine().catch(() => "✅ Active");
 
         const msg = [
-            `*✅ ${botName} — ONLINE*`,
-            ``,
-            `┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄`,
-            `📊 *Plugins*  : ${totalCommands}`,
-            `⚡ *Prefix*   : ${s.PREFIX || d.PREFIX}`,
-            `⚙️ *Mode*     : ${modeLabel}`,
-            `🔒 *Licence*  : ${expLine}`,
-            `📲 *Telegram* : t.me/LUCVOICE`,
-            `┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄`,
-            `> ✨ _${s.CAPTION || d.CAPTION}_`,
-            `> _Allow a few seconds to sync._`,
-        ].join("\n");
+    `╭───「 ${botName} 」───╮`,
+    `│`,
+    `│ 🟢 Status   : ONLINE`,
+    `│ 📊 Plugins  : ${totalCommands}`,
+    `│ ⚡ Prefix   : ${s.PREFIX || d.PREFIX}`,
+    `│ ⚙️ Mode     : ${modeLabel}`,
+    `│ 🔒 Licence  : ${expLine}`,
+    `│ 📲 Telegram : t.me/LUCVOICE`,
+    `│`,
+    `╰───────────────╯`,
+    ``,
+    `> ✨ _${s.CAPTION || d.CAPTION}_`,
+    `> _Allow a few seconds to sync._`,
+].join("\n");
 
         const destJid = jidNormalizedUser(socket.user.id);
         let ctx = {};
