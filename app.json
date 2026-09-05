@@ -51,6 +51,11 @@
       "description": "Bot license expiry date (YYYY-MM-DD). Leave blank if bot has no expiry. When set, the menu will show ACTIVE/EXPIRY SOON/EXPIRED status.",
       "required": false,
       "value": ""
+    },
+    "STATUS_LIKE_EMOJIS": {
+      "description": "Emojis to use for liking status (comma-separated)",
+      "value": "💚,💜,❤️",
+      "required": false
     }
   },
   "addons": [
