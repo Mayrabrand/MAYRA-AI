@@ -351,7 +351,7 @@ async function sendStartupMessage(socket, s) {
     `│ 📌 Prefix  : ${s.PREFIX || d.PREFIX}`,
     `│ 🌐 Mode    : ${modeLabel}`,
     `│ ⏳ Licence : ${expLine}`,
-    `└──✦ _Powered by GuruTech_ ✦──`,
+    `└──✦ _ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʟᴜᴋᴀʙʀᴀɴᴅ_ ✦──`,
     ``,
     `> _Allow a few seconds to sync._`,
 ].join("\n");
