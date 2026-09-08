@@ -345,18 +345,14 @@ async function sendStartupMessage(socket, s) {
         const expLine        = await expiryLine().catch(() => "✅ Active");
 
         const msg = [
-    `╭───「 ${botName} 」───╮`,
-    `│`,
-    `│ 🟢 Status   : ONLINE`,
-    `│ 📊 Plugins  : ${totalCommands}`,
-    `│ ⚡ Prefix   : ${s.PREFIX || d.PREFIX}`,
-    `│ ⚙️ Mode     : ${modeLabel}`,
-    `│ 🔒 Licence  : ${expLine}`,
-    `│ 📲 Telegram : t.me/LUCVOICE`,
-    `│`,
-    `╰───────────────╯`,
+    `⚡ ──「 *${botName} ┃ ᴹᴰ* 」──`,
+    `│ 🟢 Status  : ✅ ONLINE`,
+    `│ 📊 Plugins : ${totalCommands}`,
+    `│ 📌 Prefix  : ${s.PREFIX || d.PREFIX}`,
+    `│ 🌐 Mode    : ${modeLabel}`,
+    `│ ⏳ Licence : ${expLine}`,
+    `└──✦ _Powered by GuruTech_ ✦──`,
     ``,
-    `> ✨ _${s.CAPTION || d.CAPTION}_`,
     `> _Allow a few seconds to sync._`,
 ].join("\n");
 
