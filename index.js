@@ -345,15 +345,17 @@ async function sendStartupMessage(socket, s) {
         const expLine        = await expiryLine().catch(() => "✅ Active");
 
         const msg = [
-    `⚡ ──「 *${botName}* 」──`,
-    `│ 🟢 Status  : ✅ ONLINE`,
-    `│ 📊 Plugins : ${totalCommands}`,
-    `│ 📌 Prefix  : ${s.PREFIX || d.PREFIX}`,
-    `│ 🌐 Mode    : ${modeLabel}`,
-    `│ ⏳ Licence : ${expLine}`,
-    `└──✦ _ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʟᴜᴋᴀʙʀᴀɴᴅ_ ✦──`,
+    `╭━━━〔 ⚡ *${botName}* 〕━━━╮`,
+    `┃`,
+    `┃ 🟢 Status  : ✅ ONLINE`,
+    `┃ 📊 Plugins : ${totalCommands}`,
+    `┃ 📌 Prefix  : ${s.PREFIX || d.PREFIX}`,
+    `┃ 🌐 Mode    : ${modeLabel}`,
+    `┃ ⏳ Licence : ${expLine}`,
+    `┃`,
+    `╰━━✦ _ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʟᴜᴋᴀʙʀᴀɴᴅ_ ✦━━╯`,
     ``,
-    `> _Allow a few seconds to sync._`,
+    `> _Allow a few seconds to sync._`
 ].join("\n");
 
         const destJid = jidNormalizedUser(socket.user.id);
