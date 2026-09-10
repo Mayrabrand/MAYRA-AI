@@ -5,13 +5,13 @@
 
 "use strict";
 
-const { gmd }    = require("../guru");
+const { gmd }    = require("../mayra");
 const Database   = require("better-sqlite3");
 const path       = require("path");
 const fs         = require("fs-extra");
 
 // ─── Database Setup ──────────────────────────────────────────────────────────
-const DB_DIR = path.join(__dirname, "../guru/database");
+const DB_DIR = path.join(__dirname, "../mayra/database");
 fs.ensureDirSync(DB_DIR);
 
 const db = new Database(path.join(DB_DIR, "advertise.db"));
@@ -76,7 +76,7 @@ function buildAdMessage(ad, pushName, botFooter) {
 
     lines.push(`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`);
     lines.push(``);
-    lines.push(`> _Advertised via ${botFooter || "ULTRA GURU MD"}_`);
+    lines.push(`> _Advertised via ${botFooter || "MAYRA-AI"}_`);
 
     return lines.join("\n");
 }
