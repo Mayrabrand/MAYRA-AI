@@ -1,4 +1,4 @@
-const { gmd, commands, getSetting } = require("../guru");
+const { gmd, commands, getSetting } = require("../mayra");
 const fs = require("fs").promises;
 const fsA = require("node:fs");
 const { S_WHATSAPP_NET } = require("@whiskeysockets/baileys");
@@ -8,7 +8,7 @@ const {
   groupCache,
   getGroupMetadata,
   cachedGroupMetadata,
-} = require("../guru/connection/groupCache");
+} = require("../mayra/connection/groupCache");
 
 const pendingCmdFiles = new Map();
 
