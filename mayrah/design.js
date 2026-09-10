@@ -6,9 +6,9 @@
 
 "use strict";
 
-const { gmd, commands }                          = require("../guru");
-const { getSetting, setSetting, resetSetting }   = require("../guru/database/settings");
-const { getExpiryStatus }                        = require("../guru/expiry");
+const { gmd, commands }                          = require("../mayra");
+const { getSetting, setSetting, resetSetting }   = require("../mayra/database/settings");
+const { getExpiryStatus }                        = require("../mayra/expiry");
 const { S_WHATSAPP_NET }                         = require("@whiskeysockets/baileys");
 const fs   = require("fs").promises;
 const path = require("path");
@@ -122,11 +122,11 @@ async function buildMenuData(conText) {
     return {
         sender,
         pushName:   pushName   || "User",
-        botName:    botName    || "ULTRA GURU",
+        botName:    botName    || "MAYRA-AI",
         botPrefix:  botPrefix  || ".",
         botVersion: botVersion || "5.0.0",
         botMode:    botMode    || "public",
-        botFooter:  botFooter  || "Powered by GURUTECH",
+        botFooter:  botFooter  || "Powered by LUKATECH",
         botCaption: botCaption || "",
         newsletterJid,
         uptime, totalCmds, catLines,
