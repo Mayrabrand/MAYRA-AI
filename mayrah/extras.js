@@ -1,6 +1,6 @@
 
-const { gmd } = require("../guru");
-const { getSetting } = require("../guru/database/settings");
+const { gmd } = require("../mayra");
+const { getSetting } = require("../mayra/database/settings");
 const axios = require("axios");
 const crypto = require("crypto");
 
