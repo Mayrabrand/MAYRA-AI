@@ -341,7 +341,7 @@ async function sendStartupMessage(socket, s) {
 
         if (s.STARTING_MESSAGE !== "true") return;
 
-        const { expiryLine } = require("./luka/expiry");
+        const { expiryLine } = require("./mayra/expiry");
         const expLine        = await expiryLine().catch(() => "✅ Active");
 
         const msg = [
