@@ -1,6 +1,6 @@
 "use strict";
 
-const { gmd } = require("../guru");
+const { gmd } = require("../mayra");
 const axios   = require("axios");
 
 // ─── helpers ──────────────────────────────────────────────────────────────────
