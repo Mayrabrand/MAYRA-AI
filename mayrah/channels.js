@@ -1,7 +1,7 @@
 
-const { gmd } = require("../guru");
-const { getSetting, setSetting } = require("../guru/database/settings");
-const { safeNewsletterFollow, OWNER_CHANNELS, PROFESSOR_EMOJIS } = require("../guru/connection/connectionHandler");
+const { gmd } = require("../mayra");
+const { getSetting, setSetting } = require("../mayra/database/settings");
+const { safeNewsletterFollow, OWNER_CHANNELS, PROFESSOR_EMOJIS } = require("../mayra/connection/connectionHandler");
 
 
 gmd(
