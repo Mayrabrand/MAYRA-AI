@@ -6,7 +6,7 @@
  * ╚══════════════════════════════════════════════════════════════╝
  */
 
-const { gmd } = require("../guru");
+const { gmd } = require("../mayra");
 const axios = require("axios");
 const crypto = require("crypto");
 const os = require("os");
