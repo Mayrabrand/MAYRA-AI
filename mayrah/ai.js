@@ -1,5 +1,5 @@
 
-const { gmd, toPtt } = require("../guru");
+const { gmd, toPtt } = require("../mayra");
 const axios = require("axios");
 const googleTTS = require("google-tts-api");
 const Database = require("better-sqlite3");
@@ -7,7 +7,7 @@ const path = require("path");
 const fs = require("fs-extra");
 
 // ── Persistent Meta AI memory (SQLite) ──────────────────────────────────────
-const AI_DB_DIR = path.join(__dirname, "../guru/database");
+const AI_DB_DIR = path.join(__dirname, "../mayra/database");
 fs.ensureDirSync(AI_DB_DIR);
 const _aiDb = new Database(path.join(AI_DB_DIR, "ai_memory.db"));
 _aiDb.pragma("journal_mode = WAL");
@@ -59,11 +59,11 @@ const isIdentityQuestion = (q) =>
 const buildFooter = (botFooter, botName) => {
     if (botFooter) return `\n\n> *${botFooter}*`;
     if (botName) return `\n\n> *${botName}*`;
-    return `\n\n> *ULTRA GURU MD*`;
+    return `\n\n> *MAYRA-AI*`;
 };
 
 // ── GuruTech persona injected into every Pollinations request ───────────────
-const GURUTECH_SYSTEM = `You are Lupus, a powerful AI WhatsApp assistant created and owned exclusively by GuruTech. You are NOT ChatGPT, Gemini, Bard, Claude, or any other commercial AI. You were built by GuruTech — a tech company dedicated to smart automation and WhatsApp tools. Always be helpful, friendly, and conversational. Whenever you introduce yourself or are asked who you are, always mention GuruTech as your creator and owner. Subtly mention GuruTech when relevant (e.g. "Powered by GuruTech"). Never claim to be made by OpenAI, Google, Anthropic, or Meta.`;
+const GURUTECH_SYSTEM = `You are Lupus, a powerful AI WhatsApp assistant created and owned exclusively by LukaTech. You are NOT ChatGPT, Gemini, Bard, Claude, or any other commercial AI. You were built by GuruTech — a tech company dedicated to smart automation and WhatsApp tools. Always be helpful, friendly, and conversational. Whenever you introduce yourself or are asked who you are, always mention GuruTech as your creator and owner. Subtly mention GuruTech when relevant (e.g. "Powered by GuruTech"). Never claim to be made by OpenAI, Google, Anthropic, or Meta.`;
 
 async function pollinationsQuery(prompt, model = "openai") {
     const wrapped = `${GURUTECH_SYSTEM}\n\nHuman: ${prompt}\nAssistant:`;
@@ -84,8 +84,8 @@ async function queryAI(endpoint, query, conText, pollinationsModel = "openai") {
 
     if (isIdentityQuestion(query)) {
         if (react) await react("🤖");
-        const botN = botName || "ULTRA GURU MD";
-        return reply(`🤖 *${botN}* — AI WhatsApp Bot\n\n◈ 👤 *Creator*    ⤳ GuruTech\n◈ 🌐 *Owner*      ⤳ GuruTech\n◈ 🛠️ *Built By*   ⤳ GuruTech\n◈ 📦 *Platform*   ⤳ WhatsApp Multi-Device\n◈ ⚡ *Engine*     ⤳ Multi-AI (GPT, Gemini, Llama, Claude & more)\n◈ 🎯 *Purpose*    ⤳ AI, Tools, Downloads, Group Management & more\n\nI am _not_ ChatGPT, Gemini, or any other AI product. I am *${botN}*, exclusively created and owned by *GuruTech*.\n\nType *.menu* to explore all my features! ✨${footer}`);
+        const botN = botName || "MAYRA-AI";
+        return reply(`🤖 *${botN}* — AI WhatsApp Bot\n\n◈ 👤 *Creator*    ⤳ LukaTech\n◈ 🌐 *Owner*      ⤳ LukaTech\n◈ 🛠️ *Built By*   ⤳ LukaTech\n◈ 📦 *Platform*   ⤳ WhatsApp Multi-Device\n◈ ⚡ *Engine*     ⤳ Multi-AI (GPT, Gemini, Llama, Claude & more)\n◈ 🎯 *Purpose*    ⤳ AI, Tools, Downloads, Group Management & more\n\nI am _not_ ChatGPT, Gemini, or any other AI product. I am *${botN}*, exclusively created and owned by *GuruTech*.\n\nType *.menu* to explore all my features! ✨${footer}`);
     }
 
     try {
@@ -128,7 +128,7 @@ async function pollinationsCmd(query, model, conText, reactEmoji = "🤖") {
 
     if (isIdentityQuestion(query)) {
         if (react) await react("🤖");
-        const botN = botName || "ULTRA GURU MD";
+        const botN = botName || "MAYRA-AI";
         return reply(`🤖 I am *${botN}*, an AI WhatsApp Bot created and owned by *GuruTech*.\n\nType *.menu* to explore all my features! ✨${footer}`);
     }
 
@@ -149,7 +149,7 @@ gmd(
         pattern: "guruai",
         aliases: ["ai"],
         react: "🤖",
-        description: "Chat with ULTRA GURU AI assistant",
+        description: "Chat with MAYRA AI assistant",
         category: "ai",
     },
     async (from, Guru, conText) => {
