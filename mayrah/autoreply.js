@@ -1,10 +1,10 @@
-const { gmd } = require("../guru");
+const { gmd } = require("../mayra");
 const Database = require("better-sqlite3");
 const path     = require("path");
 const fs       = require("fs-extra");
 
 // ═══════════════════════════════════════════════════════════════════
-//  SMART AUTO-REPLY ENGINE  ·  ULTRA GURU MD
+//  SMART AUTO-REPLY ENGINE  ·  MAYRA-AI
 //  SQLite-backed keyword auto-response system
 //  Trigger types : exact | contains | starts | regex
 //  Scopes        : global (all chats) | group (one group only)
@@ -12,7 +12,7 @@ const fs       = require("fs-extra");
 // ═══════════════════════════════════════════════════════════════════
 
 // ── Database ────────────────────────────────────────────────────────
-const DB_DIR = path.join(__dirname, "../guru/database");
+const DB_DIR = path.join(__dirname, "../mayra/database");
 fs.ensureDirSync(DB_DIR);
 
 const db = new Database(path.join(DB_DIR, "autoreply.db"));
@@ -193,7 +193,7 @@ global.__pluginMsgHooks.push(async (ms, Guru, settings, isSuperUser) => {
                 group:   from.endsWith("@g.us") ? "the group" : "DM",
                 time:    nowDate.toLocaleTimeString(),
                 date:    nowDate.toLocaleDateString(),
-                bot:     settings?.BOT_NAME || "ULTRA GURU MD",
+                bot:     settings?.BOT_NAME || "MAYRA-AI",
                 trigger: reply.trigger,
             });
 
