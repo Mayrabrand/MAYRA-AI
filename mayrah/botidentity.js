@@ -1,4 +1,4 @@
-const { gmd, getSetting, setSetting } = require("../guru");
+const { gmd, getSetting, setSetting } = require("../mayra");
 
 // ═══════════════════════════════════════════════════════════════════
 //  BOT IDENTITY SUITE
@@ -65,14 +65,14 @@ gmd({
     if (!isSuperUser) { await react("❌"); return reply("❌ Owner only."); }
 
     const [name, pic, wmOn, wmText, bio] = await Promise.all([
-        getSetting("BOT_NAME").catch(() => "ULTRA GURU MD"),
+        getSetting("BOT_NAME").catch(() => "MAYRA-AI"),
         getSetting("BOT_PIC").catch(() => ""),
         getSetting("WATERMARK").catch(() => "false"),
         getSetting("WATERMARK_TEXT").catch(() => ""),
         getSetting("BOT_BIO").catch(() => ""),
     ]);
 
-    const botName    = name    || "ULTRA GURU MD";
+    const botName    = name    || "MAYRA-AI";
     const picUrl     = pic     || "";
     const watermark  = wmOn === "true";
     const wmLabel    = wmText  || `_Powered by ${botName}_`;
@@ -123,7 +123,7 @@ gmd({
     react:       "✏️",
     category:    "owner",
     description: "Set bot name and update WhatsApp display name live",
-    usage:       ".rebrand ULTRA GURU MD",
+    usage:       ".rebrand MAYRA-AI",
 }, async (from, Guru, conText) => {
     const { q, reply, react, isSuperUser } = conText;
     if (!isSuperUser) { await react("❌"); return reply("❌ Owner only."); }
@@ -131,7 +131,7 @@ gmd({
         return reply(
             `✏️ *Set Bot Name*\n\n` +
             `Usage: \`.rebrand <new name>\`\n\n` +
-            `Example: \`.rebrand ULTRA GURU MD v2\`\n\n` +
+            `Example: \`.rebrand MAYRA-AI v2\`\n\n` +
             `_Updates both the bot settings and the WhatsApp profile name._`
         );
     }
@@ -277,7 +277,7 @@ gmd({
     react:       "✍️",
     category:    "owner",
     description: "Set the watermark text appended to bot messages",
-    usage:       ".setwm Powered by ULTRA GURU MD",
+    usage:       ".setwm Powered by MAYRA-AI",
 }, async (from, Guru, conText) => {
     const { q, reply, react, isSuperUser } = conText;
     if (!isSuperUser) { await react("❌"); return reply("❌ Owner only."); }
@@ -287,7 +287,7 @@ gmd({
         return reply(
             `*✍️ Watermark Text*\n\n` +
             `Current: _${cur}_\n\n` +
-            `Usage: \`.setwm Powered by GURU BOT\`\n\n` +
+            `Usage: \`.setwm Powered by MAYRA BOT\`\n\n` +
             `_Use \`.wmtoggle\` to turn it on/off_`
         );
     }
@@ -343,13 +343,13 @@ gmd({
     if (!isSuperUser) { await react("❌"); return reply("❌ Owner only."); }
 
     const [name, pic, wmOn, wmText] = await Promise.all([
-        getSetting("BOT_NAME").catch(() => "ULTRA GURU MD"),
+        getSetting("BOT_NAME").catch(() => "MAYRA-AI"),
         getSetting("BOT_PIC").catch(() => ""),
         getSetting("WATERMARK").catch(() => "false"),
         getSetting("WATERMARK_TEXT").catch(() => ""),
     ]);
 
-    const botName   = name   || "ULTRA GURU MD";
+    const botName   = name   || "MAYRA-AI";
     const picUrl    = pic    || "";
     const watermark = wmOn === "true";
     const wm        = wmText || `_Powered by ${botName}_`;
