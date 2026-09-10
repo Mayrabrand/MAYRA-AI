@@ -1,14 +1,14 @@
 
-const { gmd } = require("../guru");
-const { getSetting, setSetting } = require("../guru/database/settings");
+const { gmd } = require("../mayra");
+const { getSetting, setSetting } = require("../mayra/database/settings");
 const {
     addGreetingsChat,
     removeGreetingsChat,
     getAllGreetingsChats,
     hasGreetingsChat,
     countGreetingsChats,
-} = require("../guru/database/greetings");
-const { sendGreeting } = require("../guru/scheduler");
+} = require("../mayra/database/greetings");
+const { sendGreeting } = require("../mayra/scheduler");
 
 gmd(
     {
