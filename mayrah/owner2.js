@@ -1,5 +1,5 @@
 
-const { gmd, commands, getSetting } = require("../guru");
+const { gmd, commands, getSetting } = require("../mayra");
 const fs = require("fs").promises;
 const fsA = require("node:fs");
 const { S_WHATSAPP_NET } = require("@whiskeysockets/baileys");
@@ -9,7 +9,7 @@ const {
   groupCache,
   getGroupMetadata,
   cachedGroupMetadata,
-} = require("../guru/connection/groupCache");
+} = require("../mayra/connection/groupCache");
 
 const { exec: _shellExec } = require("child_process");
 
@@ -65,8 +65,8 @@ gmd(
 
     await react("⏳");
     try {
-      const gift = require("../guru");
-      const _rawDb = require("../guru/database/database").DATABASE;
+      const gift = require("../mayra");
+      const _rawDb = require("../mayra/database/database").DATABASE;
       const settings = await gift.getAllSettings();
       const { getSetting, setSetting, getAllSettings, commands } = gift;
       const prefix = settings.PREFIX;
@@ -139,12 +139,12 @@ gmd(
       await reply("🔄 *Checking for updates before restart...*");
 
       try {
-        const { runUpdate } = require("../guru/autoUpdater");
-        const { getSetting } = require("../guru/database/settings");
+        const { runUpdate } = require("../mayra/autoUpdater");
+        const { getSetting } = require("../mayra/database/settings");
 
         const rawRepo = await getSetting("BOT_REPO");
         const match = String(rawRepo || "").match(/github\.com\/([^/\s]+\/[^/\s]+)/);
-        const repo = match ? match[1].replace(/\.git$/, "").replace(/\/*$/, "") : (rawRepo || "GuruhTech/ULTRA-GURU");
+        const repo = match ? match[1].replace(/\.git$/, "").replace(/\/*$/, "") : (rawRepo || "Mayrabrand/MAYRA-AI");
 
         const updated = await runUpdate(repo, Guru, null);
         if (updated) {
