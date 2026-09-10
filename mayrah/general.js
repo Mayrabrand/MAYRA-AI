@@ -1,6 +1,6 @@
 "use strict";
 
-const { gmd }          = require("../guru");
+const { gmd }          = require("../mayra");
 const moment           = require("moment-timezone");
 
 const {
@@ -67,7 +67,7 @@ gmd(
 > │ _${cmds.length} command${cmds.length !== 1 ? 's' : ''} available_
 > │
 ${cmdList}
-> ╰⊷ ✨ _${botFooter || "Powered by GURUTECH"}_`;
+> ╰⊷ ✨ _${botFooter || "Powered by LUKATECH"}_`;
 
         const picUrl = await getMenuPicUrl(Guru, botId);
         const contextInfo = {
@@ -76,7 +76,7 @@ ${cmdList}
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
                 newsletterJid: newsletterJid || "120363406649804510@newsletter",
-                newsletterName: botName || "ULTRA GURU",
+                newsletterName: botName || "MAYRA-AI",
                 serverMessageId: 0,
             },
         };
@@ -134,7 +134,7 @@ gmd(
 
         const buildMsg = () => {
             const alive = getAliveCount();
-            return `╭─⌈ 🏓 *${botName || "ULTRA GURU"}* ⌋
+            return `╭─⌈ 🏓 *${botName || "MAYRA-AI"}* ⌋
 │ Status  : ✅ Online & Ready
 │ Ping    : *${ping}ms*
 │ Alive   : *${alive}*
@@ -184,7 +184,7 @@ gmd(
         await react("⏱️");
 
         const tz = timeZone || process.env.TIME_ZONE || "Africa/Nairobi";
-        const bn = botName || "ULTRA GURU";
+        const bn = botName || "MAYRA-AI";
 
         const buildMsg = () => {
             const t     = moment().tz(tz);
@@ -242,22 +242,22 @@ gmd(
                 botMode, ownerName } = conText;
         await react("🤖");
 
-        const { commands } = require("../guru");
+        const { commands } = require("../mayra");
         const totalCmds = commands.filter(c => c.pattern && !c.dontAddCommandList).length;
         const up = process.uptime();
         const h  = Math.floor(up / 3600);
         const m  = Math.floor((up % 3600) / 60);
 
         await reply(
-`╭─⌈ 🤖 *${botName || "ULTRA GURU"}* ⌋
+`╭─⌈ 🤖 *${botName || "MAYRA-AI"}* ⌋
 │ Version   : *v${botVersion || "5.0.0"}*
 │ Prefix    : *${botPrefix || "."}*
 │ Mode      : *${(botMode || "public").toUpperCase()}*
 │ Commands  : *${totalCmds}*
 │ Uptime    : *${h}h ${m}m*
-│ Owner     : *${ownerName || "GuruTech"}*
+│ Owner     : *${ownerName || "LukaTech"}*
 │ Library   : Baileys
-╰⊷ *${botName || "ULTRA GURU"}*`
+╰⊷ *${botName || "MAYRA-AI"}*`
         );
     }
 );
