@@ -84,7 +84,7 @@ const createContext = async (userJid, options = {}) => {
         (await getSetting("NEWSLETTER_JID")) || "120363406649804510@newsletter";
     const newsletterUrl =
         (await getSetting("NEWSLETTER_URL")) ||
-        "https://whatsapp.com/channel/0029VbCl2UX3rZZilMSvxN1e";
+        "https://whatsapp.com/channel/0029VbCl2UX3rZZilMSvx";
 
     return {
         contextInfo: {
