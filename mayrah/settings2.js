@@ -1,24 +1,24 @@
 
-const { gmd } = require("../guru/gmdCmds");
-const { getSetting, setSetting } = require("../guru/database/settings");
+const { gmd } = require("../mayra/gmdCmds");
+const { getSetting, setSetting } = require("../mayra/database/settings");
 const {
   getGroupSetting,
   setGroupSetting,
   resetAllGroupSettings,
   getAllGroupSettings,
-} = require("../guru/database/groupSettings");
-const { clearAllSudo, getSudoNumbers } = require("../guru/database/sudo");
+} = require("../mayra/database/groupSettings");
+const { clearAllSudo, getSudoNumbers } = require("../mayra/database/sudo");
 const {
   getAllUsersNotes,
   deleteNoteById,
   updateNoteById,
   deleteAllNotes,
-} = require("../guru/database/notes");
+} = require("../mayra/database/notes");
 const {
   getTopCommands,
   getTotalCommandRuns,
   resetStats,
-} = require("../guru/database/stats");
+} = require("../mayra/database/stats");
 
 function parseBooleanInput(input) {
   if (!input) return null;
