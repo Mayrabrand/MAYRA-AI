@@ -1,12 +1,12 @@
 
-const { gmd } = require("../guru");
+const { gmd } = require("../mayra");
 const axios = require("axios");
-const { getSetting } = require("../guru/database/settings");
-const { getCommitHash } = require("../guru/database/autoUpdate");
-const { runUpdate } = require("../guru/autoUpdater");
+const { getSetting } = require("../mayra/database/settings");
+const { getCommitHash } = require("../mayra/database/autoUpdate");
+const { runUpdate } = require("../mayra/autoUpdater");
 
 const getRepo = async (guruRepo) => {
-    const raw = guruRepo || (await getSetting("BOT_REPO")) || "GuruhTech/ULTRA-GURU";
+    const raw = guruRepo || (await getSetting("BOT_REPO")) || "Mayrabrand/MAYRA-AI";
     const match = String(raw).match(/github\.com\/([^/\s]+\/[^/\s]+)/);
     return match ? match[1].replace(/\.git$/, "").replace(/\/*$/, "") : String(raw).trim();
 };
@@ -44,7 +44,7 @@ gmd(
                     headers: {
                         "Accept": "application/vnd.github.v3+json",
                         "Cache-Control": "no-cache",
-                        "User-Agent": "ULTRA-GURU-Bot",
+                        "User-Agent": "MAYRA-AI-Bot",
                     },
                 }
             );
