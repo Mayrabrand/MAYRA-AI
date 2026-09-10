@@ -77,7 +77,7 @@ function startWebServer() {
 
     app.use(express.json());
     app.use(express.static("mayra"));
-    app.get("/",       (_req, res) => res.sendFile(path.join(__dirname, "mayra", "guru.html")));
+    app.get("/",       (_req, res) => res.sendFile(path.join(__dirname, "mayra", "mayra.html")));
     app.get("/pair",   (_req, res) => res.sendFile(path.join(__dirname, "mayra", "pair.html")));
     app.get("/health", (_req, res) => res.status(200).json({ status: "alive", uptime: process.uptime() }));
 
@@ -150,7 +150,7 @@ function startSystemTasks() {
 
 function startExpiryWatchdog() {
     try {
-        const { startExpiryWatchdog: watch } = require("./luka/expiry");
+        const { startExpiryWatchdog: watch } = require("./mayra/expiry");
 
         const notifyOwner = async (text) => {
             const ownerNum = (process.env.OWNER_NUMBER || "").replace(/[^0-9]/g, "");
@@ -320,7 +320,7 @@ async function onBotConnected(socket) {
 
     // Start scheduler
     try {
-        const { startScheduler } = require("./luka/scheduler");
+        const { startScheduler } = require("./mayra/scheduler");
         startScheduler(socket);
     } catch (e) {
         console.error("[Scheduler] start error:", e.message);
