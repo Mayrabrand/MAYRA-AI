@@ -1,9 +1,9 @@
 
-const { gmd } = require("../guru");
+const { gmd } = require("../mayra");
 const axios = require("axios");
 const { sendButtons } = require("gifted-btns");
-const { getContextInfo } = require("../guru/contextInfo");
-const { getLidMapping } = require("../guru/connection/groupCache");
+const { getContextInfo } = require("../mayra/contextInfo");
+const { getLidMapping } = require("../mayra/connection/groupCache");
 const {
     initTempMailDB,
     setUserEmail,
@@ -11,7 +11,7 @@ const {
     getUserEmailWithExpiry,
     deleteUserEmail,
     EXPIRY_MINUTES,
-} = require("../guru/database/tempmail");
+} = require("../mayra/database/tempmail");
 
 initTempMailDB();
 
