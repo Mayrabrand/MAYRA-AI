@@ -1,5 +1,5 @@
 
-const { gmd, getExtensionFromMime, isTextContent } = require("../guru");
+const { gmd, getExtensionFromMime, isTextContent } = require("../mayra");
 const axios = require("axios");
 const fs = require("fs").promises;
 const crypto = require("crypto");
