@@ -19,7 +19,7 @@ const fetchLatestCommit = async (axios, repo) => {
             headers: {
                 "Accept": "application/vnd.github.v3+json",
                 "Cache-Control": "no-cache",
-                "User-Agent": "ULTRA-GURU-Bot",
+                "User-Agent": "MAYRA-AI-Bot",
             },
         }
     );
@@ -136,7 +136,7 @@ const checkAndAutoUpdate = async (Guru) => {
             return;
         }
 
-        const repo = normalizeRepo(await getSetting("BOT_REPO")) || "GuruhTech/ULTRA-GURU";
+        const repo = normalizeRepo(await getSetting("BOT_REPO")) || "Mayrabrand/MAYRA-AI";
 
         let ownerJid = null;
         try {
