@@ -345,7 +345,7 @@ async function sendStartupMessage(socket, s) {
         const expLine        = await expiryLine().catch(() => "✅ Active");
 
         const msg = [
-    `╭━━━〔 ⚡ *${botName}* 〕━━━╮`,
+    `╭━━━〔  *${botName}* 〕━━━╮`,
     `┃`,
     `┃ 🟢 Status  : ✅ ONLINE`,
     `┃ 📊 Plugins : ${totalCommands}`,
