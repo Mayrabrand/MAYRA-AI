@@ -1,7 +1,7 @@
 
-const { gmd } = require("../guru");
-const { getGroupSetting, setGroupSetting } = require("../guru/database/groupSettings");
-const { getSetting, setSetting } = require("../guru/database/settings");
+const { gmd } = require("../mayra");
+const { getGroupSetting, setGroupSetting } = require("../mayra/database/groupSettings");
+const { getSetting, setSetting } = require("../mayra/database/settings");
 
 const OWNER_ONLY = true;
 const ADMIN_ONLY = true;
