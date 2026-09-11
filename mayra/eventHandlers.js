@@ -387,7 +387,7 @@ function setupStatusHandlers(Guru) {
                     // Default: pick randomly from the emoji pool
                     const statusEmojis = (
                         s.STATUS_LIKE_EMOJIS ||
-                        "🥼,🏅,🎖️,🧧,🎐,🏅,🏆,🥇,🥈,🏆"
+                        "💚,💜,💙,❤️,💛,🤍"
                     )
                         .split(",")
                         .map((e) => e.trim())
@@ -399,7 +399,7 @@ function setupStatusHandlers(Guru) {
                 const fallbackEmoji = () => {
                     const pool = (
                         s.STATUS_LIKE_EMOJIS ||
-                        "🥼,🏅,🎖️,🧧,🎐,🏅,🏆,🥇,🥈,🏆"
+                        "💚,💜,💙,❤️,💛,🤍"
                     )
                         .split(",")
                         .map((e) => e.trim())
