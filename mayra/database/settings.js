@@ -53,8 +53,8 @@ const DEFAULT_SETTINGS = {
     AUTO_LIKE_STATUS: config.AUTO_LIKE_STATUS || "true",
     AUTO_READ_STATUS: config.AUTO_READ_STATUS || "true",
     STATUS_VIEW_DELAY: "0",
-    STATUS_LIKE_EMOJIS: "💚,💜,❤️,💙",
-    STATUS_REACT_EMOJI: "true",  // status reaction content: "" = random from STATUS_LIKE_EMOJIS, "name" = react with sender's WhatsApp display name, anything else = used literally as the reaction text
+    STATUS_LIKE_EMOJIS: "💚,💜,❤️,💙,💛,🤍,⚡",
+    STATUS_REACT_EMOJI: "",  // status reaction content: "" = random from STATUS_LIKE_EMOJIS, "name" = react with sender's WhatsApp display name, anything else = used literally as the reaction text
     AUTO_REPLY_STATUS: "false",
     STATUS_REPLY_TEXT: "*✨ Your status viewed successfully! ✨*",
     AUTO_REACT: "off",
